@@ -1,0 +1,16 @@
+בתוך התגית img של הRecipePreview, אצל חלק מהסטודנטים יש נקודותיים ישר אחרי המילה img ולא ליד הproperty של src
+
+הפרתונות שהעלתי מפנים לקובץ solution בimport - שימו לב
+
+אני ממליץ **לא חובה** להחזיר מערך של stringים ולא מחרוזת,
+מי שרוצה להחזיר מחרוזת יפה שאוספת את הנתונים מanalyzedInstuctions יכול לרשום את השורה הבאה:
+
+analyzedInstructions[0].steps.map(s=>s.step).reduce((a,b)=>a+"\n"+b)
+
+analyzedInstructions[0].steps.map(s=>s.step)
+
+להגדיר את prettier כdefualt formatter
+להגדיר format on save
+להוריד את IntelliJ IDEA Keybindings - מאפשר לכם להשתמש בקיצור ctrl alt l כדי לעשות format
+
+length of country - max is 52
