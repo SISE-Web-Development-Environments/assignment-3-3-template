@@ -14,8 +14,6 @@
 
 <!-- בנוסף נסדר ונבנה ביחד את סדר קצת יותר נכון של הדברים -->
 
-הקבצים שאיתם תעבדו במעבדה הם [MainPage.vue](src/pages/MainPage.vue) עבור העמוד הראשי, ו [RecipePreview.vue](src/components/RecipePreview.vue) עבור התצוגה המקדימה.
-
 ## **_vue-router_**
 
 הweb בנוי סביב URLs.\
@@ -231,7 +229,7 @@ or
 
 <div dir="ltr" style="padding-left:15%;">
 
-In index.js:
+In routes.js:
 
 ```javascript
 {
@@ -245,10 +243,6 @@ In template:
 
 ```html
 <router-link to="/user/5">
-  User
-</router-link>
-or
-<router-link :to="`/user/${userid}`">
   User
 </router-link>
 or
@@ -286,8 +280,21 @@ or
    - לקבל כפרמטר את הid של המתכון
    - לבקש בevent של created את הinfo של המתכון מהשרת
 
-2. לעטוף את קומפוננטת תצוגה מקדימה בrouter-link מסוג aשמקשרת לעמוד המתכון של אותו מתכון
-3. להגדיר נתיב חדש שמשתמש בקומפוננטה שיצרתם
+<div dir="ltr" style="padding-left:15%;">
+
+```javascript
+response = await this.axios.get(
+  "https://test-for-3-2.herokuapp.com/recipes/info",
+  {
+    params: { id: this.$route.params.recipeId }
+  }
+);
+```
+
+</div>
+
+1. לעטוף את קומפוננטת תצוגה מקדימה בrouter-link מסוג a שמקשרת לעמוד המתכון של אותו מתכון
+2. להגדיר נתיב חדש שמשתמש בקומפוננטה שיצרתם
 
 </b>
 

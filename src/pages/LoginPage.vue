@@ -32,7 +32,7 @@
           :state="validateState('password')"
         ></b-form-input>
         <b-form-invalid-feedback>
-          Username is required
+          Password is required
         </b-form-invalid-feedback>
       </b-form-group>
 

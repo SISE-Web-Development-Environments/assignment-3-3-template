@@ -1,8 +1,5 @@
 <template>
-  <router-link
-    :to="{ path: '/recipe', params: { recipeId: recipe.id } }"
-    class="recipe-preview"
-  >
+  <div>
     <div class="recipe-body">
       <img v-if="image_load" :src="recipe.image" class="recipe-image" />
     </div>
@@ -15,7 +12,7 @@
         <li>{{ recipe.aggregateLikes }} likes</li>
       </ul>
     </div>
-  </router-link>
+  </div>
 </template>
 
 <script>
