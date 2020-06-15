@@ -247,7 +247,7 @@ In template:
 </router-link>
 or
 <!-- הכי מומלץ -->
-<router-link :to="{name:'user', params:{userid: userid} }`">
+<router-link :to="{name:'user', params:{id: userid} }`">
   User
 </router-link>
 ```
@@ -259,7 +259,7 @@ or
 <div dir="ltr" style="padding-left:15%;">
 
 ```html
-<router-link :to="{ name: `user`, params: {userid: userid, index: 7} }">
+<router-link :to="{ name: `user`, params: {id: userid, index: 7} }">
   User
 </router-link>
 ```
