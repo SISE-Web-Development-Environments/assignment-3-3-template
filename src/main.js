@@ -1,13 +1,13 @@
 import Vue from "vue";
-import App from "./App.solution.vue";
+import App from "./App.vue";
 import VueAxios from "vue-axios";
 import axios from "axios";
 
-import routes from "./routes.solution";
+import routes from "./routes";
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
 const router = new VueRouter({
-  routes
+  routes,
 });
 
 import Vuelidate from "vuelidate";
@@ -23,7 +23,7 @@ import {
   FormSelectPlugin,
   AlertPlugin,
   ToastPlugin,
-  LayoutPlugin
+  LayoutPlugin,
 } from "bootstrap-vue";
 [
   FormGroupPlugin,
@@ -35,7 +35,7 @@ import {
   FormSelectPlugin,
   AlertPlugin,
   ToastPlugin,
-  LayoutPlugin
+  LayoutPlugin,
 ].forEach((x) => Vue.use(x));
 Vue.use(Vuelidate);
 
@@ -77,7 +77,7 @@ const shared_data = {
     console.log("logout");
     localStorage.removeItem("username");
     this.username = undefined;
-  }
+  },
 };
 console.log(shared_data);
 // Vue.prototype.$root.store = shared_data;
@@ -86,7 +86,7 @@ new Vue({
   router,
   data() {
     return {
-      store: shared_data
+      store: shared_data,
     };
   },
   methods: {
@@ -97,9 +97,9 @@ new Vue({
         variant: variant,
         solid: true,
         appendToast: append,
-        autoHideDelay: 3000
+        autoHideDelay: 3000,
       });
-    }
+    },
   },
-  render: (h) => h(App)
+  render: (h) => h(App),
 }).$mount("#app");

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import RecipePreview from "./RecipePreview";
+import RecipePreview from "./RecipePreview.vue";
 export default {
   name: "RecipePreviewList",
   components: {

@@ -1,12 +1,8 @@
 {
-  "name": "lab12-vue-3",
-  "version": "0.1.0",
-  "private": true,
+  "name": "assignment-3-3",
+  "version": "1.0.0",
   "scripts": {
-    "serve_task": "vue-cli-service serve src/main.task.js",
-    "serve_solution": "vue-cli-service serve src/main.solution.js",
-    "build_task": "vue-cli-service build src/main.task.js",
-    "build_solution": "vue-cli-service build src/main.solution.js"
+    "serve": "vue-cli-service serve"
   },
   "dependencies": {
     "axios": "^0.19.2",
